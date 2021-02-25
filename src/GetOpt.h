@@ -47,7 +47,7 @@ namespace soundmath {
 				}
 			}
 			m_opt = c = argv[m_ind][m_sp];
-			if (c == ':' || (cp = strchr (m_format.c_str (), c)) == 0) {
+			if (c == ':' || (cp = strchr ((char*) m_format.c_str (), c)) == 0) {
 				if (argv[m_ind][++m_sp] == '\0') {
 					m_ind++;
 					m_sp = 1;
